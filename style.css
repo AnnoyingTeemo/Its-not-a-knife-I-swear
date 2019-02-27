@@ -1,0 +1,62 @@
+* {
+    background-color: midnightblue;
+    color: aqua;
+}
+
+@media only screen and (max-width: 600px) {
+    * {
+        background-color: red;
+        color: red;
+    }
+
+    ::selection {
+        background: #FF0000;
+        /* WebKit/Blink Browsers */
+    }
+
+    ::-moz-selection {
+        background: #FF0000;
+        /* Gecko Browsers */
+    }
+    
+    .test{
+        display: none;
+    }
+}
+
+@media only screen and (max-height: 500px) {
+    * {
+        background-color: aqua;
+        color: aqua;
+    }
+
+
+    ::selection {
+        background: #00FFFF;
+        /* WebKit/Blink Browsers */
+    }
+
+    ::-moz-selection {
+        background: #00FFFF;
+        /* Gecko Browsers */
+    }
+}
+
+
+@media only screen and (max-height: 500px) and (max-width: 600px) {
+    * {
+        background-color: black;
+        color: black;
+    }
+
+
+    ::selection {
+        background: #0000;
+        /* WebKit/Blink Browsers */
+    }
+
+    ::-moz-selection {
+        background: #0000;
+        /* Gecko Browsers */
+    }
+}
