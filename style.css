@@ -1,62 +1,48 @@
-* {
-    background-color: midnightblue;
-    color: aqua;
+*{
+	
 }
 
-@media only screen and (max-width: 600px) {
-    * {
-        background-color: red;
-        color: red;
-    }
+#Title{
+	text-align: center;
+	background-color: #04E824;/*fix border not working*/
+	min-width: 100vh;
+    max-width: 100%;
+    top: 0;
+    left: 0;
+    margin: 0 auto;
 
-    ::selection {
-        background: #FF0000;
-        /* WebKit/Blink Browsers */
-    }
-
-    ::-moz-selection {
-        background: #FF0000;
-        /* Gecko Browsers */
-    }
-    
-    .test{
-        display: none;
-    }
 }
 
-@media only screen and (max-height: 500px) {
-    * {
-        background-color: aqua;
-        color: aqua;
-    }
-
-
-    ::selection {
-        background: #00FFFF;
-        /* WebKit/Blink Browsers */
-    }
-
-    ::-moz-selection {
-        background: #00FFFF;
-        /* Gecko Browsers */
-    }
+#Links{
+	text-align: center;
+	background-color: #34403A;
+	border-style: solid;
+	border-width: 3px;
 }
 
+.image-source-link {
+	color: #98C3D1;
+}
 
-@media only screen and (max-height: 500px) and (max-width: 600px) {
-    * {
-        background-color: black;
-        color: black;
-    }
+.mfp-with-zoom .mfp-container,
+.mfp-with-zoom.mfp-bg {
+	opacity: 0;
+	-webkit-backface-visibility: hidden;
+	/* ideally, transition speed should match zoom duration */
+	-webkit-transition: all 0.3s ease-out; 
+	-moz-transition: all 0.3s ease-out; 
+	-o-transition: all 0.3s ease-out; 
+	transition: all 0.3s ease-out;
+}
 
+.mfp-with-zoom.mfp-ready .mfp-container {
+		opacity: 1;
+}
+.mfp-with-zoom.mfp-ready.mfp-bg {
+		opacity: 0.8;
+}
 
-    ::selection {
-        background: #0000;
-        /* WebKit/Blink Browsers */
-    }
-
-    ::-moz-selection {
-        background: #0000;
-        /* Gecko Browsers */
-    }
+.mfp-with-zoom.mfp-removing .mfp-container, 
+.mfp-with-zoom.mfp-removing.mfp-bg {
+	opacity: 0;
 }
