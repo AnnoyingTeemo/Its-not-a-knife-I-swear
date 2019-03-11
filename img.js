@@ -47,7 +47,7 @@ function fExists() {
     bCheckEnabled = true;
 	
 	
-var code = img.src + '<a href="" style="width:82px;height:125px;"><img src="http://farm3.staticflickr.com/2856/9207329420_e485948b01_t.jpg" width="82px" height="125"></a>'
+var code = '<a href="'+ img.src +'" style="width:82px;height:125px;"><img src="'+ img.src +'" width="82px" height="125"></a>'
 	
 	div.insertAdjacentHTML('beforeend', code)
 //	div.appendChild(img)
