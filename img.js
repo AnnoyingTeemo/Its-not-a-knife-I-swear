@@ -36,6 +36,7 @@ function loadImage() {
         img.onload = fExists;
         img.onerror = fDoesntExist;
         img.src = 'Images/Digi Internal Images/Advertising/Fullscreen/ImagesRenamed/Img' + i + '.jpg';
+		img.smallsrc = 'Images/Digi Internal Images/Advertising/Thumbnails/ImagesRenamed/img' + i + '.jpg';
 
     }
 
@@ -47,7 +48,7 @@ function fExists() {
     bCheckEnabled = true;
 	
 	
-var code = '<a href="'+ img.src +'" style="width:82px;height:125px;"><img src="'+ img.src +'" width="82px" height="125"></a>'
+var code = '<a href="'+ img.src +'" style="width:82px;height:125px;"><img src="'+ img.smallsrc +'" width="82px" height="125"></a>'
 	
 	div.insertAdjacentHTML('beforeend', code)
 //	div.appendChild(img)
