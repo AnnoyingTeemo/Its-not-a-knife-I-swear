@@ -7,7 +7,7 @@
 // 
 //img.src = '8bike.jpg' 
 
-var div = document.getElementById('Advertising');
+var div = document.getElementById('Images');
 
 var bCheckEnabled = true;
 var bFinishCheck = false;
@@ -16,7 +16,7 @@ var img;
 var imgArray = new Array();
 var i = 1;
 
-
+var fileName = document.title;
 
 
 var myInterval = setInterval(loadImage, 1);
@@ -31,12 +31,12 @@ function loadImage() {
     if (bCheckEnabled) {
 
         bCheckEnabled = false;
-
+		
         img = new Image();
         img.onload = fExists;
         img.onerror = fDoesntExist;
-        img.src = 'Images/Digi Internal Images/Advertising/Fullscreen/ImagesRenamed/Img' + i + '.jpg';
-		img.smallsrc = 'Images/Digi Internal Images/Advertising/Thumbnails/ImagesRenamed/img' + i + '.jpg';
+        img.src = 'Images/Digi Internal Images/'+ fileName+'/Fullscreen/ImagesRenamed/Img' + i + '.jpg';
+		img.smallsrc = 'Images/Digi Internal Images/'+ fileName +'/Thumbnails/ImagesRenamed/img' + i + '.jpg';
 
     }
 
