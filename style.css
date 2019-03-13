@@ -2,12 +2,13 @@ body{
 	margin: 0px;
 	padding: 0px;
 /*	margin-left: 5em;*/
-	background-color: #52d1dc;
+/*	background-color: #52d1dc;*/
+	background-color: #373737;
 }
 
 #Title{
 	text-align: center;
-	background-color: #04E824;/*fix border not working*/
+	background-color: #5D6F85;/*fix border not working*/
 	border-style: solid;
 	border-width: 4px;
 	border-color: black;
@@ -22,14 +23,15 @@ a, figure {
 
 #Links{
 	text-align: center;
-	background-color: #34403A;
+	background-color: #373737;
+/*
 	border-style: solid;
 	border-width: 4px;
 	border-color: black;
-	color: #85ffc7;
+*/
+	color: #FFFFFF;
 	float: right;
-	width: 70%;
-	
+	width: 68%;
 }
 
 /*
@@ -38,6 +40,8 @@ a, figure {
 	border-radius: 10px;
 }
 */
+
+/*navbar */
 #navbar{
 	text-align: left;
 	font-size: 1.4m;
@@ -46,27 +50,30 @@ a, figure {
 #navbar img {
 	width: 3em;
 }
-/*navbar */
+
 ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  background-color: #52d1dc;
+  background-color: #1C2541;
   position:fixed;
   height: 100%;
 	width: 30%;
 	overflow: auto;
+		border-style: solid;
+	border-width: 4px;
+	border-color: black;
+	
 }
 
 li a {
   display: block;
-  color: #000;
+  color: #5BC0BE;;
 /*  padding: 8px 16px;*/
   text-decoration: none;
 }
 
 li a.active {
-  background-color: #4CAF50;
   color: white;
 }
 
@@ -79,13 +86,15 @@ li a:hover:not(.active) {
 #Images{
 	text-align: center;
 	background-color: #34403A;
+/*
 	border-style: solid;
 	border-width: 4px;
 	border-color: black;
+*/
 	color: #85ffc7;
 	float: right;
 	width: 70%;
-	
+	display: block;
 }
 
 @media only screen and (max-width: 650px) {
