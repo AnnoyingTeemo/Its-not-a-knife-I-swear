@@ -21,7 +21,21 @@ a, figure {
     display: inline-block;
 }
 
+
 #Links{
+	text-align: center;
+	background-color: #373737;
+/*
+	border-style: solid;
+	border-width: 4px;
+	border-color: black;
+*/
+	color: #FFFFFF;
+	float: right;
+	width: 68%;
+}
+
+#Bio{
 	text-align: center;
 	background-color: #373737;
 /*
