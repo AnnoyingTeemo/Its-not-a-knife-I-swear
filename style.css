@@ -65,6 +65,7 @@ a, figure {
 
 #navbar img {
 	width: 3em;
+	border-radius: 10px;
 }
 
 ul {
@@ -111,6 +112,10 @@ li a:hover:not(.active) {
 	float: right;
 	width: 70%;
 	display: block;
+}
+#Images img{
+	border-radius: 10px;
+	padding-left: 0.25em;
 }
 
 @media only screen and (max-width: 650px) {
