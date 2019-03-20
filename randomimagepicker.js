@@ -38,7 +38,7 @@ function loadImage() {
 	while (loop) {
 	
     if (bFinishCheck) {
-        clearInterval(myInterval);
+//        clearInterval(myInterval);
         bFinishCheck = false;
 		console.log("Finished check")
 		loop = false;
@@ -48,12 +48,28 @@ function loadImage() {
     if (bCheckEnabled) {
 		console.log("Check Enabled")
         bCheckEnabled = false;
+		var Exists = false;
+		var Error = false;
 		
         img = new Image();
-        img.onload = fExists;
-        img.onerror = fDoesntExist;
-        img.src = 'Images/Digi Internal Images/'+ fileName[num]+'/Fullscreen/ImagesRenamed/img' + i + '.png';
-		loop = false;
+		//the problem is here
+        //img.onload = fExists;
+		//Its forgetting what num its on
+        img.onload, Exists = true;
+		
+		img.onerror, Error = true;
+//		img.onerror = fDoesntExist;
+        img.src = 'Images/Digi Internal Images/'+ fileName[num]+'/Fullscreen/ImagesRenamed/img (' + i + ').jpg';
+//		loop = false;//remove this later
+		
+		if (Exists = true){
+			console.log("exists")
+			fExists(img.src);
+		}
+		if (Error = true){
+			console.log("Error")
+			fDoesntExist()
+		}
     }
 	}
 

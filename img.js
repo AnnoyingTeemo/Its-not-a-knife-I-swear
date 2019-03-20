@@ -25,6 +25,7 @@ function loadImage() {
 
     if (bFinishCheck) {
         clearInterval(myInterval);
+		addFooter();
         return;
     }
 
@@ -35,8 +36,8 @@ function loadImage() {
         img = new Image();
         img.onload = fExists;
         img.onerror = fDoesntExist;
-        img.src = 'Images/Digi Internal Images/'+ fileName+'/Fullscreen/ImagesRenamed/img' + i + '.jpg';
-		img.smallsrc = 'Images/Digi Internal Images/'+ fileName +'/Thumbnails/ImagesRenamed/img' + i + '.jpg';
+        img.src = 'Images/Digi Internal Images/'+ fileName+'/Fullscreen/ImagesRenamed/img (' + i + ').jpg';
+		img.smallsrc = 'Images/Digi Internal Images/'+ fileName +'/Thumbnails/ImagesRenamed/img (' + i + ').jpg';
 
     }
 
@@ -57,4 +58,10 @@ var code = '<a href="'+ img.src +'" ><img src="'+ img.smallsrc +'" width="82px" 
 
 function fDoesntExist() {
     bFinishCheck = true;
+}
+
+function addFooter(){
+var footerCode = '<div id="footer">\u00A9Copyright 2019 All images and concepts on this site are protected under international copyright laws</div>'
+
+div.insertAdjacentHTML('beforeend', footerCode)
 }
