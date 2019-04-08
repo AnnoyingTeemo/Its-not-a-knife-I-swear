@@ -4,6 +4,7 @@ body{
 /*	margin-left: 5em;*/
 /*	background-color: #52d1dc;*/
 	background-color: #373737;
+/*	font-family: 'Special Elite', cursive;*/
 	font-family: 'Righteous', cursive;
 }
 
@@ -93,7 +94,8 @@ a, figure {
 #navbar{
 	text-align: left;
 	font-size: 1.2em;
-	font-family: 'Special Elite', cursive;
+	font-family: 'Righteous', cursive;
+/*	font-family: 'Special Elite', cursive;*/
 }
 
 #navbar img {
