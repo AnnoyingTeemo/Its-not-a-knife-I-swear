@@ -43,7 +43,6 @@ var code = '<img src="'+ img.src +'" > '
 
 	div.insertAdjacentHTML('beforeend', code)
 //	div.appendChild(img)
-	console.log("image placed");
 	
 }
 
