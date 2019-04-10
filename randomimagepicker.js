@@ -54,7 +54,7 @@ function loadImage() {
 		
 		img.onerror, Error = true;
 //		img.onerror = fDoesntExist;
-        img.src = 'Images/Digi Internal Images/'+ fileName[num]+'/Fullscreen/ImagesRenamed/img (' + i + ').jpg';
+        img.src = 'Images/Digi Internal Images/'+ fileName[num]+'/Fullscreen/ImagesRenamed/compressed/img (' + i + ').jpg';
 //		loop = false;//remove this later
 		
 		if (Exists = true){
