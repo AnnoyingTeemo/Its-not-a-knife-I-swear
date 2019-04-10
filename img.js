@@ -36,7 +36,7 @@ function loadImage() {
         img = new Image();
         img.onload = fExists;
         img.onerror = fDoesntExist;
-        img.src = 'Images/Digi Internal Images/'+ fileName+'/Fullscreen/ImagesRenamed/img (' + i + ').jpg';
+        img.src = 'Images/Digi Internal Images/'+ fileName+'/Fullscreen/ImagesRenamed/compressed/img (' + i + ').jpg';
 		img.smallsrc = 'Images/Digi Internal Images/'+ fileName +'/Thumbnails/ImagesRenamed/img (' + i + ').jpg';
 
     }
